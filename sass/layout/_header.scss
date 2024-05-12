@@ -43,9 +43,11 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.header__cards-card-first {
-    width: 33%;
+.hr {
+    height: 261px;
     border-right: 1px solid #D7D7DD;
+    margin-top: -280px;
+    margin-left: 410px;
 }
 
 .header__cards-card-first h3 {
@@ -70,11 +72,6 @@
 .header__cards-card-first img {
     padding-left: 80px;
     padding-top: 40px;
-}
-
-.header__cards-card-second {
-    width: 33%;
-    border-right: 1px solid #D7D7DD;
 }
 
 .header__cards-card-second h3 {
