@@ -1,0 +1,117 @@
+.footer__links {
+    width: 100%;
+    height: 365px;
+    background-color: $green;
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+        font-family: 'PT Sans';
+        font-size: 60px;
+        font-weight: 500;
+        line-height: 90px;
+        letter-spacing: 0.16em;
+        text-align: left;
+        color: $white;
+        padding-top: 65px
+    }
+}
+
+.wrapper {
+    width: 1200px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    span {
+        color: $white;
+        font-family: 'Exo 2';
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 19.5px;
+        text-align: left;
+        margin-top: 50px;
+    }
+
+    p {
+        color: $white;
+        font-family: 'Exo 2';
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 19.5px;
+        letter-spacing: 0.16em;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    p:hover {
+        color: aqua;
+        cursor: pointer;
+    }
+}
+
+.parent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.child:hover {
+    background-color: white;
+    background-position: -100px 100px, -100px 100px;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+    transform: perspective(180px) rotateX(60deg) translateY(2px);
+    box-shadow: 0px 10px 10px rgb(1, 49, 182);
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.button:hover {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate3d(0px, 0px, 15px) perspective(180px) rotateX(-35deg) translateY(2px);
+    border-radius: 50%;
+}
+
+.btn {
+    width: 271px;
+    height: 42px;
+    margin-top: 32px;
+    gap: 0px;
+    border: none;
+    opacity: 0px;
+    background-color: $yellow;
+    color: $white;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 19.5px;
+    text-align: left;
+    padding-left: 50px;
+    transition: all 1s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform: scale(105%);
+}
