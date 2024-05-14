@@ -6,8 +6,7 @@
     }
 
     .header__section {
-        display: grid;
-        grid-template-columns: auto;
+        display: block;
 
         h1 {
             font-size: 44px;
