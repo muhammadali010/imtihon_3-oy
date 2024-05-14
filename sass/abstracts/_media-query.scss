@@ -1,19 +1,21 @@
 @media screen and (max-width:992px) {
 
     .container {
-        max-width: 700px;
+        max-width: 768px;
+        margin: 0 auto;
     }
 
     .header__section {
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: auto;
 
-        .h1 {
+        h1 {
             font-size: 44px;
             font-weight: 600;
             line-height: 55px;
         }
 
-        .p {
+        p {
             font-size: 16px;
             font-weight: 400;
             line-height: 24px;
@@ -21,10 +23,36 @@
     }
 }
 
+.header__section-img {
+    width: 690px;
+    height: 314px;
+}
 
 .header__cards {
-    flex-wrap: wrap;
+    display: block;
 }
+
+.header__cards-card-first {
+    width: 690px;
+    height: 164px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.header__cards-card-second {
+    width: 690px;
+    height: 164px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.header__cards-card-three {
+    width: 690px;
+    height: 164px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 
 .background-imgs {
     width: 100%;
@@ -46,20 +74,77 @@
 }
 
 .works {
-    flex-wrap: wrap;
+    display: block;
+}
+
+.work__mashines {
+    width: 690px;
+    height: 423px;
+
+    .img {
+        width: 690px;
+        height: 247px;
+    }
+}
+
+.work__components {
+    width: 690px;
+    height: 423px;
+
+    img {
+        width: 690px;
+        height: 247px;
+    }
+}
+
+.work__boat {
+    display: none;
 }
 
 .etaps img {
     display: none;
 }
 
-.etaps div {
-    width: 693.53px;
+.background__table {
+    width: 100%;
+    height: 971px;
+}
+
+.etap_card1 {
+    width: 690.5px;
     height: 245px;
+
+    img {
+        display: none;
+    }
+}
+
+.etap_card2 {
+    width: 690.5px;
+    height: 245px;
+
+    img {
+        display: none;
+    }
+}
+
+.etap_card3 {
+    width: 690.5px;
+    height: 245px;
+
+    img {
+        display: none;
+    }
 }
 
 .companias {
     flex-wrap: wrap;
+}
+
+.users {
+
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 .user {
@@ -75,10 +160,254 @@
 .user:nth-child(6) {
     display: none;
 }
-.adres{
-flex-wrap:wrap;
+
+.adres {
+    flex-wrap: wrap;
 }
-.video iframe{
+
+.location {
+    width: 690px;
+    height: 368px;
+    border-radius: 5px;
+    border: 1px;
+}
+
+.video iframe {
     width: 675px;
     height: 405px;
+}
+
+@media screen and(max-width:768px) {
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .header__section {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .header__section-img {
+        width: 590px;
+        height: 300px;
+    }
+
+    .work__mashines {
+        width: 590px;
+        height: 400px;
+
+        .img {
+            width: 590px;
+            height: 220px;
+        }
+    }
+
+    .work__components {
+        width: 590px;
+        height: 400px;
+
+        .img {
+            width: 590px;
+            height: 220px;
+        }
+    }
+
+    .users {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .user {
+        width: 45%;
+        height: 250px;
+        border-left: 10% solid $green;
+    }
+
+    .user:nth-child(5) {
+        display: none;
+    }
+
+    .user:nth-child(6) {
+        display: none;
+    }
+
+    .adres {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .video iframe {
+        width: 100%;
+        height: 280px;
+    }
+
+    .footer__links {
+        width: 100%;
+        height: 187px;
+    }
+}
+
+@media screen and(max-width:576px) {
+    .container {
+        max-width: 345px;
+        margin: 0 auto;
+    }
+
+    .header__section-img {
+        width: 345px;
+        height: 253px;
+    }
+
+    .header__cards {
+        display: block;
+        width: 345px;
+        height: 638px;
+        gap: 0px;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .background-imgs {
+        display: none;
+
+        h1 {
+            display: block;
+        }
+    }
+
+    .card__lock {
+        width: 337px;
+        height: 74px;
+        gap: 0px;
+    }
+
+    .card__money {
+        width: 337px;
+        height: 74px;
+        gap: 0px;
+    }
+
+    .card__local {
+        width: 337px;
+        height: 74px;
+        gap: 0px;
+    }
+
+    .card__table {
+        width: 337px;
+        height: 74px;
+        gap: 0px;
+    }
+
+    .work__mashines {
+        width: 345px;
+        height: 395px;
+        gap: 0px;
+        border-radius: 10px;
+    }
+
+    .work__components {
+        display: none;
+    }
+
+    .work__boat {
+        display: none;
+    }
+
+    .background__table {
+        width: 375px;
+        height: 640px;
+        gap: 0px;
+        border: 1px;
+        opacity: 0px;
+    }
+
+    .etaps {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .etap_card1 {
+        width: 338px;
+        height: 176px;
+        gap: 0px;
+        opacity: 0px;
+    }
+
+    .etap_card2 {
+        width: 338px;
+        height: 176px;
+        gap: 0px;
+        opacity: 0px;
+    }
+
+    .etap_card3 {
+        width: 338px;
+        height: 176px;
+        gap: 0px;
+        opacity: 0px;
+    }
+
+    .block {
+        width: 173px;
+        height: 176px;
+        gap: 0px;
+        opacity: 0px;
+    }
+
+    .block5 {
+        display: none;
+    }
+
+    .block6 {
+        display: none;
+    }
+
+    .companias {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .users {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .user {
+        width: 345px;
+        height: 156px;
+        gap: 0px;
+        border-radius: 10px;
+        border-left: 20px solid $green;
+    }
+
+    .location {
+        width: 345px;
+        height: 568px;
+        gap: 0px;
+        border-radius: 5px;
+        border: 1px;
+        opacity: 0px;
+    }
+
+    .video iframe {
+        width: 327px;
+        height: 196.2px;
+        gap: 0px;
+        opacity: 0px;
+    }
+
+    .footer__links {
+        width: 375px;
+        height: 481px;
+
+        button {
+            width: 294px;
+            height: 44px;
+            gap: 0px;
+            border: 1px;
+            opacity: 0px;
+        }
+    }
 }
